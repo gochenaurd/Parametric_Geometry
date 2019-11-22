@@ -1,0 +1,299 @@
+# Mom_Christmas_2018.csm written by ocsmSave (v1.11)
+
+# Constant and Design Parameters:
+despmtr   backWidth       0.80897
+despmtr   backLength       0.66954
+despmtr   midWidth       0.78000
+despmtr   midLength       0.67200
+despmtr   frontWidth       0.71669
+despmtr   frontLength       0.70700
+
+# Global Attributes:
+
+# Branches:
+skbeg     0   0   0   1
+   skvar     xy   -0.004962;0.004943;0.000000;0.805755;0.004943;0.000000;0.805755;0.677245;0.000000;1.379189;0.341094;0.000000;1.784547;1.043057;0.000000;1.211113;1.379208;0.000000;1.784547;1.705472;0.000000;1.379189;2.417321;0.000000;0.795868;2.081170;0.000000;0.795868;2.743585;0.000000;-0.004962;2.743585;0.000000;-0.004962;2.071283;0.000000;-0.588283;2.407434;0.000000;-0.993642;1.705472;0.000000;-0.410321;1.369321;0.000000;-0.993642;1.033170;0.000000;-0.588283;0.341094;0.000000;-0.004962;0.677245;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     H   1   2  0
+   skcon     V   2   3  0
+   skcon     V   9   10  0
+   skcon     H   10   11  0
+   skcon     V   11   12  0
+   skcon     V   18   1  0
+   skcon     L   4   5  backWidth
+   skcon     L   1   2  backWidth
+   skcon     L   16   17  backWidth
+   skcon     L   13   14  backWidth
+   skcon     A   3   -1  -120
+   skcon     A   12   -1  -120
+   skcon     A   15   -1  -120
+   skcon     L   12   13  backLength
+   skcon     L   5   6  backLength
+   skcon     L   8   9  backLength
+   skcon     L   15   16  backLength
+   skcon     L   18   1  backLength
+   skcon     L   11   12  backLength
+   skcon     L   2   3  backLength
+   skcon     L   14   15  backLength
+   skcon     L   3   4  backLength
+   skcon     A   9   -1  -120
+   skcon     A   8   -1  90
+   skcon     A   7   -1  90
+   skcon     A   5   -1  90
+   skcon     A   4   -1  90
+   skcon     L   10   11  backWidth
+   skcon     A   13   -1  90
+   skcon     A   14   -1  90
+   skcon     A   16   -1  90
+   skcon     L   6   7  backLength
+   skcon     A   17   -1  90
+   skcon     A   18   -1  -120
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[5]   ::y[5]   0
+   linseg    ::x[6]   ::y[6]   0
+   linseg    ::x[7]   ::y[7]   0
+   linseg    ::x[8]   ::y[8]   0
+   linseg    ::x[9]   ::y[9]   0
+   linseg    ::x[10]   ::y[10]   0
+   linseg    ::x[11]   ::y[11]   0
+   linseg    ::x[12]   ::y[12]   0
+   linseg    ::x[13]   ::y[13]   0
+   linseg    ::x[14]   ::y[14]   0
+   linseg    ::x[15]   ::y[15]   0
+   linseg    ::x[16]   ::y[16]   0
+   linseg    ::x[17]   ::y[17]   0
+   linseg    ::x[18]   ::y[18]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+extrude   0   0   0.12
+skbeg     0   0   0   1
+   skvar     xy   -0.005000;0.000000;0.000000;0.775000;0.000000;0.000000;0.775000;0.680000;0.000000;1.365000;0.340000;0.000000;1.755000;1.020000;0.000000;1.165000;1.360000;0.000000;1.755000;1.700000;0.000000;1.365000;2.370000;0.000000;0.775000;2.040000;0.000000;0.775000;2.710000;0.000000;-0.005000;2.710000;0.000000;-0.005000;2.040000;0.000000;-0.595000;2.370000;0.000000;-0.985000;1.700000;0.000000;-0.395000;1.360000;0.000000;-0.985000;1.020000;0.000000;-0.595000;0.340000;0.000000;-0.005000;0.680000;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     H   1   2  0
+   skcon     V   9   10  0
+   skcon     H   10   11  0
+   skcon     V   11   12  0
+   skcon     V   18   1  0
+   skcon     L   1   2  midWidth
+   skcon     L   2   3  midLength
+   skcon     L   3   4  midLength
+   skcon     L   4   5  midWidth
+   skcon     L   7   8  midWidth
+   skcon     L   10   11  midWidth
+   skcon     L   13   14  midWidth
+   skcon     L   16   17  midWidth
+   skcon     L   18   1  midLength
+   skcon     L   17   18  midLength
+   skcon     L   15   16  midLength
+   skcon     L   14   15  midLength
+   skcon     L   12   13  midLength
+   skcon     L   11   12  midLength
+   skcon     L   9   10  midLength
+   skcon     L   8   9  midLength
+   skcon     L   6   7  midLength
+   skcon     L   5   6  midLength
+   skcon     V   2   3  0
+   skcon     A   3   -1  -120
+   skcon     A   4   -1  90
+   skcon     A   6   -1  -120
+   skcon     A   7   -1  90
+   skcon     A   9   -1  -120
+   skcon     A   12   -1  -120
+   skcon     A   13   -1  90
+   skcon     A   15   -1  -120
+   skcon     A   16   -1  90
+   skcon     A   14   -1  90
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[5]   ::y[5]   0
+   linseg    ::x[6]   ::y[6]   0
+   linseg    ::x[7]   ::y[7]   0
+   linseg    ::x[8]   ::y[8]   0
+   linseg    ::x[9]   ::y[9]   0
+   linseg    ::x[10]   ::y[10]   0
+   linseg    ::x[11]   ::y[11]   0
+   linseg    ::x[12]   ::y[12]   0
+   linseg    ::x[13]   ::y[13]   0
+   linseg    ::x[14]   ::y[14]   0
+   linseg    ::x[15]   ::y[15]   0
+   linseg    ::x[16]   ::y[16]   0
+   linseg    ::x[17]   ::y[17]   0
+   linseg    ::x[18]   ::y[18]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+extrude   0   0   0.18
+translate (backWidth-midWidth)/2   0.018   0
+skbeg     0   0   0   1
+   skvar     xy   -0.005000;0.000000;0.000000;0.775000;0.000000;0.000000;0.775000;0.680000;0.000000;1.365000;0.340000;0.000000;1.755000;1.020000;0.000000;1.165000;1.360000;0.000000;1.755000;1.700000;0.000000;1.365000;2.370000;0.000000;0.775000;2.040000;0.000000;0.775000;2.710000;0.000000;-0.005000;2.710000;0.000000;-0.005000;2.040000;0.000000;-0.595000;2.370000;0.000000;-0.985000;1.700000;0.000000;-0.395000;1.360000;0.000000;-0.985000;1.020000;0.000000;-0.595000;0.340000;0.000000;-0.005000;0.680000;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     H   1   2  0
+   skcon     V   9   10  0
+   skcon     H   10   11  0
+   skcon     V   11   12  0
+   skcon     V   18   1  0
+   skcon     L   1   2  frontWidth
+   skcon     L   2   3  frontLength
+   skcon     L   3   4  frontLength
+   skcon     L   4   5  frontWidth
+   skcon     L   7   8  frontWidth
+   skcon     L   10   11  frontWidth
+   skcon     L   13   14  frontWidth
+   skcon     L   16   17  frontWidth
+   skcon     L   18   1  frontLength
+   skcon     L   17   18  frontLength
+   skcon     L   15   16  frontLength
+   skcon     L   14   15  frontLength
+   skcon     L   12   13  frontLength
+   skcon     L   11   12  frontLength
+   skcon     L   9   10  frontLength
+   skcon     L   8   9  frontLength
+   skcon     L   6   7  frontLength
+   skcon     L   5   6  frontLength
+   skcon     V   2   3  0
+   skcon     A   3   -1  -120
+   skcon     A   4   -1  90
+   skcon     A   6   -1  -120
+   skcon     A   7   -1  90
+   skcon     A   9   -1  -120
+   skcon     A   12   -1  -120
+   skcon     A   13   -1  90
+   skcon     A   15   -1  -120
+   skcon     A   16   -1  90
+   skcon     A   14   -1  90
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[5]   ::y[5]   0
+   linseg    ::x[6]   ::y[6]   0
+   linseg    ::x[7]   ::y[7]   0
+   linseg    ::x[8]   ::y[8]   0
+   linseg    ::x[9]   ::y[9]   0
+   linseg    ::x[10]   ::y[10]   0
+   linseg    ::x[11]   ::y[11]   0
+   linseg    ::x[12]   ::y[12]   0
+   linseg    ::x[13]   ::y[13]   0
+   linseg    ::x[14]   ::y[14]   0
+   linseg    ::x[15]   ::y[15]   0
+   linseg    ::x[16]   ::y[16]   0
+   linseg    ::x[17]   ::y[17]   0
+   linseg    ::x[18]   ::y[18]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+extrude   0   0   0.18
+translate (backWidth-frontWidth)/2   0.03   0
+subtract  none   1   0
+union     0   0   0
+skbeg     0   0   0   1
+   linseg    0.06134   2.0396   0
+   arc       -0.06134   2.0396   0   0.06134   xy
+   linseg    0   0   0
+skend     0
+translate backWidth/2   0.314395   0
+extrude   0   0   0.18
+union     0   0   0
+skbeg     0   0   0   1
+   linseg    0   0.45   0
+   linseg    0.2   0.15   0
+   linseg    0.4   0.45   0
+   linseg    0.4   0   0
+   linseg    0.35   0   0
+   linseg    0.35   0.27   0
+   linseg    0.2   0.05   0
+   linseg    0.05   0.27   0
+   linseg    0.05   0   0
+   linseg    0   0   0
+skend     0
+extrude   0   0   0.18
+store     word_m   0   1
+translate -0.3   1.16667   0
+union     0   0   0
+restore   word_m   0
+translate backWidth-0.1   1.16667   0
+union     0   0   0
+skbeg     0   0   0   1
+   arc       0   0.45   0   0.45/2   xy
+   arc       0   0   0   0.45/2   xy
+skend     0
+extrude   0   0   0.18
+skbeg     0   0   0   1
+   arc       0   0.35   0   0.35/2   xy
+   arc       0   0   0   0.35/2   xy
+skend     0
+extrude   0   0   0.18
+translate 0   0.05   0
+subtract  none   1   0
+translate backWidth/2   1.16667   0
+union     0   0   0
+skbeg     0   0   0   1
+   linseg    0   0   0.18
+   linseg    0.05763   0   0.18
+   linseg    0.05763   0   0
+   linseg    0   0   0
+skend     0
+store     snakeCross   0   0
+mark
+restore   snakeCross   0
+rotatez   70   0   0
+translate backWidth/2-0.01   0.6761   0
+restore   snakeCross   0
+translate backWidth/2-0.1   .85   0
+restore   snakeCross   0
+rotatez   -70   0   0
+translate backWidth/2-0.01   1.01   0
+restore   snakeCross   0
+translate backWidth/2+0.12   1.24   0
+restore   snakeCross   0
+rotatez   70   0   0
+translate backWidth/2-0.01   1.37   0
+restore   snakeCross   0
+translate backWidth/2-0.17   1.55   0
+restore   snakeCross   0
+rotatez   -50   0   0
+translate backWidth/2-0.01   1.77   0
+restore   snakeCross   0
+translate backWidth/2+0.11   1.92   0
+restore   snakeCross   0
+rotatez   40   0   0
+translate backWidth/2-0.01   2.04   0
+restore   snakeCross   0
+translate backWidth/2-0.16   2.19   0
+restore   snakeCross   0
+rotatez   -50   0   0
+translate backWidth/2-0.01   2.38   0
+restore   snakeCross   0
+rotatez   -70   0   0
+translate backWidth/2+0.06   2.42   0
+blend     0   0   0   0
+union     0   0   0
+skbeg     0   0   0   1
+   skvar     xy   -0.005000;0.000000;0.000000;0.705000;0.350000;0.090000;-0.005000;0.700000;0.090000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     V   3   1  0
+   skcon     R   1   2  0.9
+   skcon     R   2   3  0.9
+   skcon     L   3   1  0.7
+   skcon     A   1   -1  90
+   skcon     A   3   -1  90
+   arc       ::x[2]   ::y[2]   0   ::d[2]   xy
+   arc       ::x[3]   ::y[3]   0   ::d[3]   xy
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+scale     0.08233
+extrude   0   0   0.18
+rotatez   20   0   0
+translate backWidth/2+0.0797-0.0001   2.36587-0.0001   0
+union     0   0   0
+
+scale  1.1818
+scale  25.4
+
+dump momChristmasStl.stl
+
+end
