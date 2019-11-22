@@ -1,0 +1,229 @@
+# Dad_Christmas_2018.csm written by ocsmSave (v1.11)
+
+# Constant and Design Parameters:
+
+# Global Attributes:
+
+# Branches:
+skbeg     0   0   0   1
+   skvar     xy   0.000000;0.005000;0.000000;0.750000;0.555000;0.000000;0.560000;0.755000;0.000000;0.920000;1.015000;0.000000;1.420000;2.065000;0.000000;1.100000;2.655000;0.000000;0.660000;1.725000;0.000000;0.000000;1.245000;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     V   8   1  0
+   skcon     L   1   2  0.94
+   skcon     L   8   1  1.236
+   skcon     L   7   8  0.825
+   skcon     L   2   3  0.2778
+   skcon     L   3   4  0.443
+   skcon     L   4   5  1.165
+   skcon     L   5   6  0.668
+   skcon     L   6   7  1.022
+   skcon     A   1   -1  126.08
+   skcon     A   8   -1  53.92
+   skcon     A   6   -1  126.08
+   skcon     A   5   -1  53.92
+   skcon     A   4   -1  29.352
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[5]   ::y[5]   0
+   linseg    ::x[6]   ::y[6]   0
+   linseg    ::x[7]   ::y[7]   0
+   linseg    ::x[8]   ::y[8]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+extrude   0   0   0.12
+store     half_body   0   1
+restore   half_body   0
+rotatey   180   0   0
+translate 0   0   0.12
+join     0
+store     full_body   0   1
+skbeg     0   0   0   1
+   skvar     xy   -0.006141;0.001893;0.000000;0.698081;0.516808;0.000000;0.478485;0.713688;0.000000;0.894961;1.024151;0.000000;1.372015;2.038838;0.000000;1.106985;2.515892;0.000000;0.720798;1.690513;0.000000;-0.006141;1.168025;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     V   8   1  0
+   skcon     A   8   -1  53.92
+   skcon     A   1   -1  126.08
+   skcon     A   6   -1  126.08
+   skcon     A   5   -1  53.92
+   skcon     A   4   -1  28
+   skcon     L   8   1  1.1605
+   skcon     L   7   8  0.89267
+   skcon     L   6   7  0.916
+   skcon     L   5   6  0.551
+   skcon     L   4   5  1.117
+   skcon     L   3   4  0.524
+   skcon     L   2   3  0.295
+   skcon     L   1   2  0.8697
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[5]   ::y[5]   0
+   linseg    ::x[6]   ::y[6]   0
+   linseg    ::x[7]   ::y[7]   0
+   linseg    ::x[8]   ::y[8]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+extrude   0   0   0.18
+translate 0   0.04   0
+store     inner_body   0   1
+restore   inner_body   0
+rotatey   180   0   0
+translate 0   0   0.18
+join     0
+translate 0   0   1
+skbeg     0   0   0   1
+   skvar     xy   -0.007852;0.010296;0.000000;0.597778;0.442889;0.000000;0.359852;0.626741;0.000000;0.824889;0.983630;0.000000;1.289926;2.000222;0.000000;1.095259;2.357111;0.000000;0.738370;1.567630;0.000000;-0.007852;1.026889;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     V   8   1  0
+   skcon     L   8   1  1.02306
+   skcon     L   7   8  0.9149
+   skcon     L   6   7  0.8632
+   skcon     L   5   6  0.40803
+   skcon     L   4   5  1.11162
+   skcon     L   3   4  0.5907
+   skcon     L   2   3  0.29973
+   skcon     L   1   2  0.74985
+   skcon     A   1   -1  126.08
+   skcon     A   8   -1  53.92
+   skcon     A   4   -1  28
+   skcon     A   6   -1  126.08
+   skcon     A   5   -1  53.92
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[5]   ::y[5]   0
+   linseg    ::x[6]   ::y[6]   0
+   linseg    ::x[7]   ::y[7]   0
+   linseg    ::x[8]   ::y[8]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+extrude   0   0   0.18
+store     inner_inner_body   0   1
+restore   inner_inner_body   0
+rotatey   180   0   0
+translate 0   0   0.18
+join     0
+translate 0   0.12   1
+subtract  none   1   0
+translate 0   0   -1
+union     0   0   0
+skbeg     0   0   0   1
+   skvar     xy   0.000000;0.000804;-0.302193;0.000000;0.601974;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     V   1   2  0
+   skcon     L   1   2  0.6
+   skcon     R   2   1  -0.3
+   linseg    ::x[2]   ::y[2]   0
+   arc       ::x[1]   ::y[1]   0   ::d[1]   xy
+skend     0
+scale     0.6
+extrude   0   0   0.18
+store     word_d   0   1
+skbeg     0   0   0   1
+   skvar     xy   0.000000;0.000374;-0.251378;0.000000;0.500137;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     V   1   2  0
+   skcon     L   1   2  0.5
+   skcon     R   2   1  -0.25
+   linseg    ::x[2]   ::y[2]   0
+   arc       ::x[1]   ::y[1]   0   ::d[1]   xy
+skend     0
+scale     0.5
+translate 0.027   0.055   0
+extrude   0   0   0.18
+subtract  none   1   0
+store     full_d   0   1
+translate -0.33   0.45   0
+union     0   0   0
+restore   full_d   0
+translate 0.18   0.45   0
+union     0   0   0
+skbeg     0   0   0   1
+   skvar     xy   0.000000;0.005000;0.000000;0.720000;1.545000;0.000000;1.440000;0.005000;0.000000;1.140000;0.005000;0.000000;0.720000;0.915000;0.000000;0.300000;0.005000;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     H   3   4  0
+   skcon     H   6   1  0
+   skcon     L   1   2  1.7
+   skcon     L   6   1  0.3
+   skcon     L   3   4  0.3
+   skcon     L   5   6  1
+   skcon     L   4   5  1
+   skcon     A   6   -1  -65
+   skcon     A   4   -1  -65
+   skcon     L   2   3  1.7
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[5]   ::y[5]   0
+   linseg    ::x[6]   ::y[6]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+scale     0.23
+extrude   0   0   0.18
+translate -0.166   0.45   0
+union     0   0   0
+box       0   0   0   0.2   0.04   0.18
+translate -0.1   0.55   0
+union     0   0   0
+skbeg     0   0   0   1
+   skvar     xy   -0.000462;0.000396;0.000000;0.756936;0.000396;0.000000;0.756936;0.046158;0.000000;-0.000462;0.046158;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     H   1   2  0
+   skcon     V   2   3  0
+   skcon     V   4   1  0
+   skcon     L   3   4  0.75702
+   skcon     L   2   3  0.046
+   skcon     L   1   2  0.75702
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+rotatez   35   0   0
+extrude   0   0   0.18
+store     inner_band   0   1
+translate 0.72   1.668   0
+union     0   0   0
+restore   inner_band   0
+rotatez   -35+180-35   0   0
+translate -0.7   1.71   0
+union     0   0   0
+skbeg     0   0   0   1
+   skvar     xy   -0.001420;0.001824;0.000000;1.398170;0.001824;0.000000;1.398170;0.047036;0.000000;-0.001420;0.047036;0.000000;
+   skcon     X   1   -1  0
+   skcon     Y   1   -1  0
+   skcon     H   1   2  0
+   skcon     V   2   3  0
+   skcon     V   4   1  0
+   skcon     L   3   4  1.4
+   skcon     L   2   3  0.046
+   skcon     L   1   2  1.4
+   linseg    ::x[2]   ::y[2]   0
+   linseg    ::x[3]   ::y[3]   0
+   linseg    ::x[4]   ::y[4]   0
+   linseg    ::x[1]   ::y[1]   0
+skend     0
+extrude   0   0   0.18
+rotatez   35   0   0
+store     mid_outline   0   1
+translate 0.000   0.826   0
+union     0   0   0
+restore   mid_outline   0
+rotatez   -35+180-35   0   0
+translate 0.0264   0.8637   0
+union     0   0   0
+
+scale  1.1818
+scale  25.4
+
+dump      Dad_Christmas_2018_Scaled.stl   0   0
+
+end
