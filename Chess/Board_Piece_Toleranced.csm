@@ -1,0 +1,31 @@
+# Board_Piece.csm written by ocsmSave (v1.11)
+
+# Constant and Design Parameters:
+despmtr   baseLength     4.50
+despmtr   thickness		 0.35
+despmtr   holeDiam       1.65
+despmtr   holeOffset     0.45
+despmtr   tolerance      0.06
+
+# Global Attributes:
+
+# Branches:
+box   0   0   0   baseLength   baseLength   thickness
+
+cylinder   -holeOffset   baseLength/2   0   -holeOffset   baseLength/2   thickness   (holeDiam-tolerance)/2
+union
+
+cylinder   baseLength+holeOffset   baseLength/2   0   baseLength+holeOffset   baseLength/2   thickness   (holeDiam-tolerance)/2
+union
+
+cylinder   baseLength/2   holeOffset   0   baseLength/2   holeOffset   thickness   (holeDiam+tolerance)/2
+subtract   none   1   0
+
+cylinder   baseLength/2   baseLength-holeOffset   0   baseLength/2   baseLength-holeOffset   thickness   (holeDiam+tolerance)/2
+subtract   none   1   0
+
+scale    10
+
+dump     chessBoardPieceToleranced.stl   0   0
+
+end

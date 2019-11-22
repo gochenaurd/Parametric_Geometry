@@ -1,0 +1,95 @@
+# Chess_Rook.csm written by ocsmSave (v1.11)
+
+# Constant and Design Parameters:
+despmtr   baseDiam       3.35000
+despmtr   baseHeight       0.30000
+despmtr   baseCuffDiam       3.45000
+despmtr   baseCuffHeight       0.45000
+despmtr   midCuffDiam       2.30000
+despmtr   midCuffHeight       1.50000
+despmtr   height       5.00000
+despmtr   headDiam       2.35000
+
+# Global Attributes:
+
+# Branches:
+skbeg     0   0   0   1
+   arc       1   0   0   0.5   xy
+   arc       0   0   0   0.5   xy
+skend     0
+store     circCross   0   0
+mark
+restore   circCross   0
+scale     baseDiam
+translate -baseDiam/2   0   0.05
+restore   circCross   0
+scale     baseDiam
+translate -baseDiam/2   0   baseHeight
+blend     0   0   0   0
+mark
+restore   circCross   0
+scale     baseDiam
+translate -baseDiam/2   0   baseHeight
+restore   circCross   0
+scale     baseCuffDiam
+translate -baseCuffDiam/2   0   baseCuffHeight
+restore   circCross   0
+scale     baseCuffDiam*0.98
+translate -baseCuffDiam*0.98/2   0   0.53
+restore   circCross   0
+scale     2.85
+translate -2.85/2   0   0.9
+restore   circCross   0
+scale     midCuffDiam*1.1-0.05
+translate -(midCuffDiam*1.1-0.05)/2   0   midCuffHeight-0.05
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     midCuffDiam*1.1-0.05
+translate -(midCuffDiam*1.1-0.05)/2   0   midCuffHeight-0.05
+restore   circCross   0
+scale     midCuffDiam*1.1
+translate -midCuffDiam*1.1/2   0   midCuffHeight
+restore   circCross   0
+scale     midCuffDiam
+translate -midCuffDiam/2   0   midCuffHeight+0.2
+restore   circCross   0
+scale     2.0
+translate -2.0/2   0   midCuffHeight+0.5
+restore   circCross   0
+scale     1.7
+translate -1.7/2   0   4.0
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     1.75
+translate -1.75/2   0   4.0-0.00001
+restore   circCross   0
+scale     1.75
+translate -1.75/2   0   4.1
+blend     0   0   0   0
+union     0   0   0
+mark
+restore   circCross   0
+scale     2.2
+translate -2.2/2   0   4.1-0.00001
+restore   circCross   0
+scale     headDiam
+translate -headDiam/2   0   height-0.15
+blend     0   0   0   0
+union     0   0   0
+box       -headDiam/2-0.1   -0.1   4.65   headDiam+0.2   0.2   0.4
+subtract  none   1   0
+box       -headDiam/2-0.1   -0.1   4.65   headDiam+0.2   0.2   0.4
+rotatez   90   0   0
+subtract  none   1   0
+cylinder  0   0   height-0.1   0   0   height-0.1-0.4   1.8/2
+subtract  none   1   0
+
+scale 10
+
+dump      chessRook.stl   0   0
+
+end
