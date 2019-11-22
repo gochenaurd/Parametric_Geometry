@@ -1,0 +1,173 @@
+# chessKing.csm written by ocsmSave (v1.11)
+
+despmtr   baseDiam         3.85
+despmtr   baseHeight       0.35
+despmtr   baseCuffDiam     3.70
+despmtr   baseCuffHeight   0.55
+despmtr   midCuffDiam      2.40
+despmtr   midCuffHeight    2.10
+despmtr   cuffDiam         2.60
+despmtr   cuffHeight       5.15
+
+skbeg     0   0   0   1
+   arc       1   0   0   0.5   xy
+   arc       0   0   0   0.5   xy
+skend     0
+store     circCross   0   0
+
+mark
+restore     circCross   0
+scale       baseDiam
+translate   -baseDiam/2   0   0
+restore     circCross   0
+scale       baseDiam
+translate   -baseDiam/2   0   baseHeight
+blend   0   0   0   0
+
+mark
+restore     circCross   0
+scale       baseDiam
+translate   -baseDiam/2   0   baseHeight
+restore     circCross   0
+scale       baseDiam-0.2
+translate   -(baseDiam-0.2)/2   0   baseHeight+0.1
+restore   circCross   0
+scale     baseCuffDiam
+translate -baseCuffDiam/2   0   baseCuffHeight
+restore   circCross   0
+scale     baseCuffDiam-1.0
+translate -(baseCuffDiam-1.0)/2   0   baseCuffHeight+0.8
+restore   circCross   0
+scale     midCuffDiam
+translate -midCuffDiam/2   0   midCuffHeight
+blend   0   0   0   0
+join   0
+
+mark
+restore   circCross   0
+scale     midCuffDiam
+translate -midCuffDiam/2   0   midCuffHeight
+restore   circCross   0
+scale     midCuffDiam-0.4
+translate -(midCuffDiam-0.4)/2   0   midCuffHeight+0.1
+restore   circCross   0
+scale     midCuffDiam-0.5
+translate -(midCuffDiam-0.5)/2   0   midCuffHeight+0.2
+restore   circCross   0
+scale     midCuffDiam-0.9
+translate -(midCuffDiam-0.9)/2   0   midCuffHeight+1
+restore   circCross   0
+scale     1.1
+translate -1.1/2   0   cuffHeight-0.1
+blend     0   0   0   0
+join   0
+
+mark
+restore   circCross   0
+scale     1.10
+translate -1.10/2   0   cuffHeight-0.1
+restore   circCross   0
+scale     cuffDiam
+translate -cuffDiam/2   0   cuffHeight
+restore   circCross   0
+scale     cuffDiam-0.5
+translate -(cuffDiam-0.5)/2   0   cuffHeight+0.15
+blend     0   0   0   0
+join   0
+
+mark
+restore   circCross   0
+scale     cuffDiam-0.5
+translate -(cuffDiam-0.5)/2   0   cuffHeight+0.15
+restore   circCross   0
+scale     cuffDiam-0.5
+translate -(cuffDiam-0.5)/2   0   cuffHeight+0.25
+restore   circCross   0
+scale     cuffDiam-0.8
+translate -(cuffDiam-0.8)/2   0   cuffHeight+0.30
+blend   0   0   0   0
+join   0
+
+mark
+restore   circCross   0
+scale     cuffDiam-0.8
+translate -(cuffDiam-0.8)/2   0   cuffHeight+0.30
+restore   circCross   0
+scale     cuffDiam-0.8
+translate -(cuffDiam-0.8)/2   0   cuffHeight+0.55
+blend   0   0   0   0
+join   0
+
+mark
+restore   circCross   0
+scale     cuffDiam-0.8
+translate -(cuffDiam-0.8)/2   0   cuffHeight+0.55
+restore   circCross   0
+scale     cuffDiam-0.70
+translate -(cuffDiam-0.70)/2   0   cuffHeight+0.63
+restore   circCross   0
+scale     cuffDiam-0.8
+translate -(cuffDiam-0.8)/2   0   cuffHeight+0.71
+restore   circCross   0
+scale     cuffDiam-1.0
+translate -(cuffDiam-1.0)/2   0   cuffHeight+0.76
+blend   0   0   0   0
+join   0
+
+mark
+restore   circCross   0
+scale     cuffDiam-1.0
+translate -(cuffDiam-1.0)/2   0   cuffHeight+0.76-0.00001
+restore   circCross   0
+scale     cuffDiam-0.2
+translate -(cuffDiam-0.2)/2   0   cuffHeight+2.1
+blend   0   0   0   0
+fillet   0.05   0
+union   0   0   0
+
+mark
+restore   circCross   0
+scale     cuffDiam-0.3
+translate -(cuffDiam-0.3)/2   0   cuffHeight+2.1-0.00001
+restore   circCross   0
+scale     cuffDiam-1.4
+translate -(cuffDiam-1.4)/2   0   cuffHeight+2.13
+blend   0   0   0   0
+union   0   0   0
+
+mark
+restore   circCross   0
+scale     cuffDiam-1.4
+translate -(cuffDiam-1.4)/2   0   cuffHeight+2.13-0.00001
+restore   circCross   0
+scale     cuffDiam-1.4
+translate -(cuffDiam-1.4)/2   0   cuffHeight+2.23
+blend   0   0   0   0
+fillet   0.01   0
+union   0   0   0
+#join    0
+
+skbeg     0   0   0   1
+   linseg   0.08   0.3   0
+   linseg   -0.18-0.1  0.3   0
+   linseg   -0.18-0.1  0.85   0
+   linseg   0.22-0.1   0.85   0
+   linseg   0.17-0.1   1.20   0
+   linseg   0.65   1.20   0
+   linseg   0.60   0.85   0
+   linseg   1.00   0.85   0
+   linseg   1.00   0.3   0
+   linseg   0.64   0.3   0
+   linseg   0.72   0.0   0
+   linseg   0.00   0.0   0
+skend     0
+rotatex   90   0    0
+extrude   0    0.4  0
+translate   -0.36   -0.2   cuffHeight+2.17
+fillet   0.05   0
+union   0   0   0
+
+scale 10
+
+dump     chessKing.stl   0   0
+end

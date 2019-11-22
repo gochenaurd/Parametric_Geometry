@@ -1,0 +1,153 @@
+# chessBishop.csm written by ocsmSave (v1.11)
+
+# Constant and Design Parameters:
+despmtr   baseDiam       3.10000
+despmtr   baseHeight       0.23000
+despmtr   baseCuffDiam       3.05000
+despmtr   baseCuffHeight       0.40000
+despmtr   midCuffDiam       1.80000
+despmtr   midCuffHeight       1.50000
+despmtr   cuffDiam       2.30000
+despmtr   cuffHeight       3.40000
+
+# Global Attributes:
+
+# Branches:
+skbeg     0   0   0   1
+   arc       1   0   0   0.5   xy
+   arc       0   0   0   0.5   xy
+skend     0
+store     circCross   0   0
+mark
+restore   circCross   0
+scale     baseDiam
+translate -baseDiam/2   0   0
+restore   circCross   0
+scale     baseDiam
+translate -baseDiam/2   0   baseHeight
+blend     0   0   0   0
+mark
+restore   circCross   0
+scale     baseDiam
+translate -baseDiam/2   0   baseHeight
+restore   circCross   0
+scale     baseDiam-0.2
+translate -(baseDiam-0.2)/2   0   baseHeight+0.08
+restore   circCross   0
+scale     baseCuffDiam
+translate -baseCuffDiam/2   0   baseCuffHeight
+restore   circCross   0
+scale     baseCuffDiam-0.4
+translate -(baseCuffDiam-0.4)/2   0   baseCuffHeight+0.2
+restore   circCross   0
+scale     midCuffDiam
+translate -midCuffDiam/2   0   midCuffHeight
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     midCuffDiam
+translate -midCuffDiam/2   0   midCuffHeight
+restore   circCross   0
+scale     midCuffDiam-0.35
+translate -(midCuffDiam-0.35)/2   0   midCuffHeight+0.1
+restore   circCross   0
+scale     midCuffDiam-0.45
+translate -(midCuffDiam-0.45)/2   0   midCuffHeight+0.2
+restore   circCross   0
+scale     midCuffDiam-0.85
+translate -(midCuffDiam-0.85)/2   0   midCuffHeight+1
+restore   circCross   0
+scale     0.75
+translate -0.75/2   0   cuffHeight-0.05
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     0.75
+translate -0.75/2   0   cuffHeight-0.05
+restore   circCross   0
+scale     cuffDiam
+translate -cuffDiam/2   0   cuffHeight
+restore   circCross   0
+scale     1.5
+translate -1.5/2   0   cuffHeight+0.15
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     1.5
+translate -1.5/2   0   cuffHeight+0.15
+restore   circCross   0
+scale     1.7
+translate -1.7/2   0   cuffHeight+0.2
+restore   circCross   0
+scale     1.4
+translate -1.4/2   0   cuffHeight+0.3
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     1.4
+translate -1.4/2   0   cuffHeight+0.3
+restore   circCross   0
+scale     1.4
+translate -1.4/2   0   cuffHeight+0.55
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     1.4
+translate -1.4/2   0   cuffHeight+0.55
+restore   circCross   0
+scale     1.55
+translate -1.55/2   0   cuffHeight+0.6
+restore   circCross   0
+scale     1.4
+translate -1.4/2   0   cuffHeight+0.65
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     1.4
+translate -1.4/2   0   cuffHeight+0.65
+restore   circCross   0
+scale     1.8
+translate -1.8/2   0   cuffHeight+1
+restore   circCross   0
+scale     0.5
+translate -0.5/2   0   cuffHeight+2.3
+blend     0   0   0   0
+join     0
+mark
+restore   circCross   0
+scale     0.5
+translate -0.5/2   0   cuffHeight+2.3
+restore   circCross   0
+scale     0.7
+translate -0.7/2   0   cuffHeight+2.45
+restore   circCross   0
+scale     0.5
+translate -0.5/2   0   cuffHeight+2.55
+restore   circCross   0
+scale     0.3
+translate -0.3/2   0   cuffHeight+2.60
+restore   circCross   0
+scale     0.01
+translate -0.01/2   0   cuffHeight+2.62
+blend     0   0   0   0
+join     0
+skbeg     0   0   0   1
+   linseg    0.2   0   0
+   linseg    0.1   0   1
+   linseg    0   0   0
+skend     0
+rotatey   30   0   0
+translate 0   -baseDiam/2   cuffHeight+1.25-cuffHeight+3.5
+extrude   0   baseDiam   0
+subtract  none   1   0
+
+scale 10
+
+dump     chessBishop.stl   0   0
+end
